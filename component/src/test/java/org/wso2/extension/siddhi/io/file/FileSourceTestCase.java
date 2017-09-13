@@ -246,6 +246,8 @@ public class FileSourceTestCase {
         siddhiAppRuntime.restore(snapshot);
         log.info(count);
         // Restarting runtime
+        siddhiAppRuntime.shutdown();
+        siddhiAppRuntime.start();
 
         //SiddhiTestHelper.waitForEvents(2000, 10, count, 30000);
         //assert event count

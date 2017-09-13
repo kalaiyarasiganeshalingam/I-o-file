@@ -1,0 +1,6 @@
+[{"event":{"symbol":"ATM", "price":55.6, "volume":100}}, 
+{"event":{"symbol":"IBM", "price":55.6, "volume":200}}, 
+{"event":{"symbol":"IBM", "price":55.6, "volume":300}}]
+[{"event":{"symbol":"wso2", "price":55.6, "volume":400}}, 
+{"event":{"symbol":"qwe", "price":55.6, "volume":500}}, 
+{"event":{"symbol":"ert", "price":55.6, "volume":600}}]

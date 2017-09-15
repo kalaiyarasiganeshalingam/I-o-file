@@ -26,7 +26,7 @@ public class FileSourceTestCase {
     private boolean paused;
 
     //  current state and restore state
-
+    // Here restore state work but can't increase a count after the restore state.
     @Test
     public void testJsonInputDefaultMappingwithpaused() throws InterruptedException {
         log.info("______________Test to read the files and their contents under the given folder______________");
@@ -146,7 +146,7 @@ public class FileSourceTestCase {
         siddhiAppRuntime.shutdown();
     }
 
-    // in this case count increase after the restart Siddhi App runtime. but
+    // in this case count increase after the restart Siddhi App runtime. but can't get the restore state
     @Test
     public void testJsonInputDefaultMappingwithpaused11() throws InterruptedException {
         log.info("______________Test to read the files and their contents under the given folder______________");

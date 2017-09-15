@@ -242,7 +242,6 @@ public class FileSource extends Source {
         Map<String, Object> currentState = new HashMap<>();
         currentState.put("Filepointer1", pointer);
         currentState.put("CurrentFileName", currentFileName);
-        currentState.put("CurrentStoredata", storeLineData);
         return currentState;
     }
 
@@ -256,7 +255,7 @@ public class FileSource extends Source {
     public void restoreState(Map<String, Object> map) {
         this.pointer = (String) map.get("pointer");
         this.currentFileName = (String) map.get("currentFileName");
-        this.storeLineData = storeLineData.append(map.get("CurrentStoredata"));
+
     }
 
     /****BEGIN:Sample private methods for File Source*******/
